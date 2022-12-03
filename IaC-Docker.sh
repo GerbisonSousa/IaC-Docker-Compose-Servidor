@@ -1,16 +1,15 @@
 #!/bin/bash
 
 apt install update
-
+cd ..
 mkdir data
 cd /data
 mkdir apache
 cd /apache
-wget https://github.com/GerbisonSousa/IaC-Docker-Compose-Servidor/blob/main/index.html
+mv index.html
 
 cd ../..
-
-wget https://github.com/GerbisonSousa/IaC-Docker-Compose-Servidor/blob/main/docker-compose.yml
+mv docker-compose.yml
 
 sudo apt install -y docker.io
 sudo apt-get install -y docker-compose
